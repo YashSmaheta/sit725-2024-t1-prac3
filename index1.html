@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materialize Modal Form Example</title>
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <style>
+    /* Optional: Custom styles */
+    .modal-content {
+      padding: 24px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Button to open the modal -->
+<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Open Modal</a>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Modal Form</h4>
+    <form id="myForm">
+      <div class="input-field">
+        <input id="first_name" type="text" class="validate" name="first_name">
+        <label for="first_name">First Name</label>
+      </div>
+      <div class="input-field">
+        <input id="last_name" type="text" class="validate" name="last_name">
+        <label for="last_name">Last Name</label>
+      </div>
+      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+        <i class="material-icons right">send</i>
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- Materialize JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!-- Your JavaScript file -->
+<script src="script.js"></script>
+</body>
+</html>
